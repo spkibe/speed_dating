@@ -1,6 +1,8 @@
+/* static/css/style.css */
 body {
     background-color: #f8f1f1;
     font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
 .navbar {
@@ -23,6 +25,7 @@ body {
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    border-radius: 15px;
 }
 
 .card:hover {
@@ -31,4 +34,64 @@ body {
 
 h1, h2, h3 {
     color: #ff69b4;
+}
+
+.match-card {
+    background: linear-gradient(135deg, #fff0f5, #f8f1f1);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.match-card:hover {
+    transform: scale(1.02);
+}
+
+.email-link {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.decision {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+}
+
+.like {
+    background-color: #ff69b4;
+}
+
+.friendship {
+    background-color: #20b2aa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .match-card {
+        padding: 15px;
+    }
+    .form-select {
+        width: 100% !important;
+    }
+    .w-50 {
+        width: 100% !important;
+    }
+    .event-card {
+        margin-bottom: 15px;
+    }
+}
+
+/* About section */
+.about-section {
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px 0;
 }
