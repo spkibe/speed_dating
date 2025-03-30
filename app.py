@@ -55,7 +55,7 @@ def is_valid_password(password):
 def admin_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if 'email' not in session or session['email'] not in ['admin@example.com', "spkibet@gmail.com"]:
+        if 'email' not in session or session['email'] not in ['admin@example.com', "spkibet@gmail.com", 'nomkk@yahoo.com']:
             flash('Admin access required.', 'danger')
             return redirect(url_for('login'))
         return f(*args, **kwargs)
